@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_menu">
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:label="Главное меню"
+
+        android:name="mirea.manproject.computerhelper.menu.MenuFragment"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_nav_menu_to_nav_function"
+            app:destination="@id/nav_function" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_function"
+        android:label="Настройки"
+
+        android:name="mirea.manproject.computerhelper.FunctionFragment"
+        tools:layout="@layout/fragment_function" >
+    </fragment>
+
+</navigation>

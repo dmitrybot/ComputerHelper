@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ComputerHelper</string>
+
+    <string name="battery_text">Пожалуйста, введите все компоненты системы,
+        которые вы используете или планируете использовать в вашей системе в поля ниже.
+        Для вычисления необходимой мощности блока питания мы используем
+        пиковый расход энергии каждого компонента вашей конфигурации
+        в соответствии с информацией производителя.</string>
+    <string name="battery_name">Калькулятор мощности БП</string>
+    <string name="battery_title">Блок питания</string>
+
+    <string name="function_title">Function</string>
+
+    <string name="rate_name">Частота</string>
+    <string name="developer_name">Разработчик</string>
+    <string name="videomemory_name">Видеопамять</string>
+
+</resources>
