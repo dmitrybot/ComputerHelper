@@ -12,7 +12,12 @@
     <string name="function_title">Function</string>
 
     <string name="rate_name">Частота</string>
-    <string name="developer_name">Разработчик</string>
+    <string name="socket_name">Сокет</string>
+    <string name="manufacturer_name">Производитель</string>
+    <string name="model_name">Модель</string>
     <string name="videomemory_name">Видеопамять</string>
+
+    <string name="configuration">Ваша конфигурация</string>
+    <string name="button_change">Изменить конфигурацию</string>
 
 </resources>

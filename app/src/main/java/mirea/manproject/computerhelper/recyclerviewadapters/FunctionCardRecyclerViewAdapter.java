@@ -1,4 +1,4 @@
-package mirea.manproject.computerhelper.menu;
+package mirea.manproject.computerhelper.recyclerviewadapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +16,7 @@ public class FunctionCardRecyclerViewAdapter extends RecyclerView.Adapter<Functi
 
     private List<Function> functions;
 
-    FunctionCardRecyclerViewAdapter(List<Function> functions) {
+    public FunctionCardRecyclerViewAdapter(List<Function> functions) {
         this.functions = functions;
     }
 

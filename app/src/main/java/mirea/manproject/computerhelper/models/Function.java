@@ -75,4 +75,8 @@ public class Function {
     public void setComponentList(List<Component> componentList) {
         this.componentList = componentList;
     }
+
+    public void setComponent(Component component, int position){
+        componentList.set(position, component);
+    }
 }

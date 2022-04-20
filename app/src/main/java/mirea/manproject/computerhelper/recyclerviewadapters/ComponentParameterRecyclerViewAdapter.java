@@ -1,18 +1,16 @@
-package mirea.manproject.computerhelper;
+package mirea.manproject.computerhelper.recyclerviewadapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import mirea.manproject.computerhelper.components.Component;
+import mirea.manproject.computerhelper.R;
 import mirea.manproject.computerhelper.components.ComponentParameter;
-import mirea.manproject.computerhelper.menu.FunctionCardRecyclerViewAdapter;
 
 public class ComponentParameterRecyclerViewAdapter extends RecyclerView.Adapter<ComponentParameterViewHolder>{
 

@@ -1,4 +1,4 @@
-package mirea.manproject.computerhelper;
+package mirea.manproject.computerhelper.recyclerviewadapters;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -8,20 +8,20 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import mirea.manproject.computerhelper.menu.FunctionCardRecyclerViewAdapter;
-import mirea.manproject.computerhelper.menu.FunctionItemDecoration;
+import mirea.manproject.computerhelper.MainActivity;
+import mirea.manproject.computerhelper.R;
 
-public class ComponentViewHolder extends RecyclerView.ViewHolder{
+public class ComponentListViewHolder extends RecyclerView.ViewHolder{
     public ImageView componentImage;
     public TextView componentName;
     public RecyclerView recyclerView;
 
-    public ComponentViewHolder(@NonNull View itemView) {
+    public ComponentListViewHolder(@NonNull View itemView) {
         super(itemView);
         componentName = itemView.findViewById(R.id.component_name);
         componentImage = itemView.findViewById(R.id.component_icon);
         recyclerView = itemView.findViewById(R.id.recycler_view_in);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(MainActivity.getInstance().getApplicationContext(), 1, GridLayoutManager.VERTICAL, false));
+        recyclerView.setLayoutManager(new GridLayoutManager(itemView.getContext(), 1, GridLayoutManager.VERTICAL, false));
     }
 }

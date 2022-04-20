@@ -1,4 +1,4 @@
-package mirea.manproject.computerhelper.menu;
+package mirea.manproject.computerhelper.recyclerviewadapters;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import mirea.manproject.computerhelper.DI.ServiceLocator;
 import mirea.manproject.computerhelper.MainActivity;
 import mirea.manproject.computerhelper.R;
 
@@ -28,7 +29,7 @@ public class FunctionCardViewHolder extends RecyclerView.ViewHolder implements V
     public void onClick(View v) {
         int position = getAdapterPosition();
         if (position != RecyclerView.NO_POSITION) {
-            MainActivity.getInstance().goToFunctionFragment(position);
+            ServiceLocator.getInstance().goToFunctionFragment(position);
         }
     }
 }

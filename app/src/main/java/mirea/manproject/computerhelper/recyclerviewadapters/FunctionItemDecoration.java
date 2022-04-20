@@ -1,4 +1,4 @@
-package mirea.manproject.computerhelper.menu;
+package mirea.manproject.computerhelper.recyclerviewadapters;
 
 import android.graphics.Rect;
 import android.view.View;

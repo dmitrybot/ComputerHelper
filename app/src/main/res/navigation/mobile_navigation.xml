@@ -10,7 +10,7 @@
         android:id="@+id/nav_menu"
         android:label="Главное меню"
 
-        android:name="mirea.manproject.computerhelper.menu.MenuFragment"
+        android:name="mirea.manproject.computerhelper.MenuFragment"
         tools:layout="@layout/fragment_menu" >
         <action
             android:id="@+id/action_nav_menu_to_nav_function"
@@ -23,6 +23,17 @@
 
         android:name="mirea.manproject.computerhelper.FunctionFragment"
         tools:layout="@layout/fragment_function" >
+        <action
+            android:id="@+id/action_nav_function_to_nav_result"
+            app:destination="@id/nav_result" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_result"
+        android:label="Результат"
+
+        android:name="mirea.manproject.computerhelper.ResultFragment"
+        tools:layout="@layout/fragment_result" >
     </fragment>
 
 </navigation>

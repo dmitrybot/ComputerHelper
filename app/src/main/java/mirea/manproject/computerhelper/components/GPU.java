@@ -12,8 +12,8 @@ public class GPU extends Component{
         super(name);
         setIcon(R.drawable.gpu_icon);
         List<ComponentParameter> componentParameterList = new ArrayList<>();
-        componentParameterList.add(new VideoMemory());
-        componentParameterList.add(new Developer());
+        componentParameterList.add(new Socket(R.string.manufacturer_name, "460Gh"));
+        componentParameterList.add(new Socket(R.string.videomemory_name, "560Gh"));
         setComponentPatameters(componentParameterList);
     }
 }

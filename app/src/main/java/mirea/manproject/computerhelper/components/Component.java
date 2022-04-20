@@ -7,12 +7,18 @@ public abstract class Component {
     private int icon;
     private String name;
     private List<ComponentParameter> componentPatameters;
+    private String recomendation = null;
 
     public Component() {
     }
 
     public Component(String name) {
         this.name = name;
+    }
+
+    public Component(String name, String recomendation) {
+        this.name = name;
+        this.recomendation = recomendation;
     }
 
     public Component(int icon, String name) {
@@ -48,5 +54,13 @@ public abstract class Component {
 
     public void setComponentPatameters(List<ComponentParameter> componentPatameters) {
         this.componentPatameters = componentPatameters;
+    }
+
+    public String getRecomendation() {
+        return recomendation;
+    }
+
+    public void setRecomendation(String recomendation) {
+        this.recomendation = recomendation;
     }
 }
