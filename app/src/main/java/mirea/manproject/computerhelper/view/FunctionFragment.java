@@ -1,4 +1,4 @@
-package mirea.manproject.computerhelper;
+package mirea.manproject.computerhelper.view;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,13 +15,9 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.List;
-
 import mirea.manproject.computerhelper.R;
-import mirea.manproject.computerhelper.components.CPU;
 import mirea.manproject.computerhelper.recyclerviewadapters.ComponentListRecyclerViewAdapter;
 import mirea.manproject.computerhelper.models.Function;
-import mirea.manproject.computerhelper.recyclerviewadapters.FunctionCardRecyclerViewAdapter;
 import mirea.manproject.computerhelper.viewmodel.FunctionViewModel;
 
 public class FunctionFragment extends Fragment {
@@ -32,7 +28,6 @@ public class FunctionFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         vm = new ViewModelProvider(this).get(FunctionViewModel.class);
 
     }
@@ -50,6 +45,7 @@ public class FunctionFragment extends Fragment {
         vm.getFunctionLiveData().observe(getViewLifecycleOwner(), new Observer<Function>() {
             @Override
             public void onChanged(@Nullable final Function function) {
+                System.out.println(function);
                 fuction_name.setText(function.getName());
                 function_text.setText(function.getText());
                 ComponentListRecyclerViewAdapter adapter = new ComponentListRecyclerViewAdapter(function.getComponentList());
@@ -62,8 +58,7 @@ public class FunctionFragment extends Fragment {
         make.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //vm.goToResultFragment();
-                vm.setCompponent(new CPU("Процессор"), 2);
+                vm.goToResultFragment();
             }
         });
 

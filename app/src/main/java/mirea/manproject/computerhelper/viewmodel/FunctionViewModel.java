@@ -5,15 +5,15 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import mirea.manproject.computerhelper.DI.ServiceLocator;
-import mirea.manproject.computerhelper.FunctionRepository;
-import mirea.manproject.computerhelper.MainActivity;
-import mirea.manproject.computerhelper.R;
-import mirea.manproject.computerhelper.components.Component;
+import mirea.manproject.computerhelper.network.Network;
+import mirea.manproject.computerhelper.repository.FunctionRepository;
+import mirea.manproject.computerhelper.models.Component;
 import mirea.manproject.computerhelper.models.Function;
 
 public class FunctionViewModel extends ViewModel {
 
     FunctionRepository functionRepository;
+    Network network;
 
     private MutableLiveData<Function> functionMutableLiveData;
 
@@ -22,8 +22,10 @@ public class FunctionViewModel extends ViewModel {
     }
 
     public FunctionViewModel(){
-        functionRepository = ServiceLocator.getInstance().functionRepository;
+        functionRepository = ServiceLocator.getInstance().getFunctionRepository();
         functionMutableLiveData = functionRepository.getFunction();
+        network = ServiceLocator.getInstance().getNetwork();
+        //System.out.println(functionMutableLiveData.getValue());
     }
 
     public void setCompponent(Component component, int position){
@@ -32,7 +34,13 @@ public class FunctionViewModel extends ViewModel {
         functionMutableLiveData.setValue(function);
     }
 
+    public void loadComponents(){
+    }
+
     public void goToResultFragment(){
-        ServiceLocator.getInstance().goToResultFragment();
+        if (functionMutableLiveData.getValue().getComponentList().stream().noneMatch(a -> a.getPickedVariant() == null)) {
+            network.getComponents(functionMutableLiveData.getValue());
+            ServiceLocator.getInstance().goToResultFragment();
+        }
     }
 }

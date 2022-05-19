@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:text="Name:"
         android:textSize="20dp"
-        android:textColor="@color/gray"
+        android:textColor="#F6F6F6"
         android:layout_height="wrap_content"
         android:paddingBottom="2dp"/>
 

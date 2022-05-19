@@ -1,16 +1,25 @@
 package mirea.manproject.computerhelper.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import mirea.manproject.computerhelper.components.Component;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 public class Function {
 
-    private int title;
-    private int text;
-    private int name;
+    private int position;
+    private int title = 2131755072;
+    private int text = 2131755072;
+    private int name = 2131755072;
     private int image = 0;
-    List<Component> componentList;
+    List<Component> componentList = new ArrayList<>();
+
+    public Function() {
+    }
 
     public Function(int title) {
         this.title = title;
@@ -28,12 +37,21 @@ public class Function {
         this.image = image;
     }
 
-    public Function(int title, int text, int name, int image, List<Component> componentList) {
+    public Function(int title, int text, int name, int image, int position, List<Component> componentList) {
         this.title = title;
         this.text = text;
         this.name = name;
         this.image = image;
+        this.position = position;
         this.componentList = componentList;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
     }
 
     public int getImage() {
@@ -78,5 +96,20 @@ public class Function {
 
     public void setComponent(Component component, int position){
         componentList.set(position, component);
+    }
+
+    public Component getComponent(int position){
+        return componentList.get(position);
+    }
+
+    @Override
+    public String toString() {
+        return "Function{" +
+                "title=" + title +
+                ", text=" + text +
+                ", name=" + name +
+                ", image=" + image +
+                ", componentList=" + componentList +
+                '}';
     }
 }

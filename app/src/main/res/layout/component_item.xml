@@ -33,13 +33,32 @@
                 android:textSize="30dp" />
         </LinearLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_in"
-            android:background="@color/background1"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="vertical"
-            />
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinner_item_back"
+                android:orientation="vertical">
+                <mirea.manproject.computerhelper.BaseSearchableSpinner
+                    android:popupBackground="#565656"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/spinner"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </FrameLayout>

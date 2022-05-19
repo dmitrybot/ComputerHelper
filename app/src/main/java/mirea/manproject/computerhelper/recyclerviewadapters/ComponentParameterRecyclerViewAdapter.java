@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import mirea.manproject.computerhelper.R;
-import mirea.manproject.computerhelper.components.ComponentParameter;
+import mirea.manproject.computerhelper.models.ComponentParameter;
 
 public class ComponentParameterRecyclerViewAdapter extends RecyclerView.Adapter<ComponentParameterViewHolder>{
 

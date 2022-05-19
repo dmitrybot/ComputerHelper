@@ -15,7 +15,7 @@
     <color name="toolbarIconColor">#FFFFFF</color>
     <color name="loginPageBackgroundColor">#FFFFFF</color>
     <color name="productGridBackgroundColor">#FFFFFF</color>
-    <color name="spinnerBack">#9F9F9F</color>
+    <color name="spinnerBack">#565656</color>
 
     <color name="background1">#FF393E46</color>
     <color name="function_title">#222831</color>

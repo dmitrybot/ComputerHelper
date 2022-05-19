@@ -3,6 +3,7 @@ package mirea.manproject.computerhelper.recyclerviewadapters;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import mirea.manproject.computerhelper.R;
-import mirea.manproject.computerhelper.components.Component;
+import mirea.manproject.computerhelper.models.Component;
 
 public class ComponentListRecyclerViewAdapter extends RecyclerView.Adapter<ComponentListViewHolder>{
 
@@ -33,9 +34,11 @@ public class ComponentListRecyclerViewAdapter extends RecyclerView.Adapter<Compo
             Component component = components.get(position);
             holder.componentName.setText(component.getName());
             holder.componentImage.setImageResource(component.getIcon());
-            ComponentParameterRecyclerViewAdapter adapter = new ComponentParameterRecyclerViewAdapter(component.getComponentPatameters());
 
-            holder.recyclerView.setAdapter(adapter);
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                    holder.itemView.getContext(), R.layout.spinner_item_selection, R.id.spinner_item, component.getVariants());
+            holder.spinner.setAdapter(adapter);
+            if (component.getPickedVariant() != null) holder.spinner.setSelection(component.getVariants().indexOf(component.getPickedVariant()));
         }
     }
 

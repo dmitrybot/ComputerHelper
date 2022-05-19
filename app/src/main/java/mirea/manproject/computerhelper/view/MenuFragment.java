@@ -1,4 +1,4 @@
-package mirea.manproject.computerhelper;
+package mirea.manproject.computerhelper.view;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,6 +12,8 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.gms.common.util.JsonUtils;
 
 import org.w3c.dom.ls.LSOutput;
 

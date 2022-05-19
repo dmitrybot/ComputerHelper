@@ -9,6 +9,13 @@
     <string name="battery_name">Калькулятор мощности БП</string>
     <string name="battery_title">Блок питания</string>
 
+    <string name="gpu_text">Пожалуйста, введите процессор, который вы хотите,
+        чтобы раскрывал возможности подбираемой видеокарты. Для вычисления
+        используются данные, полученные экспериментальным путем и не являющиеся
+        точными на 100%</string>
+    <string name="gpu_name">Видеокарты под процессор</string>
+    <string name="gpu_title">Видеокарта</string>
+
     <string name="function_title">Function</string>
 
     <string name="rate_name">Частота</string>

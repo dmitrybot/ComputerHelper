@@ -7,8 +7,7 @@ import androidx.lifecycle.ViewModel;
 import java.util.List;
 
 import mirea.manproject.computerhelper.DI.ServiceLocator;
-import mirea.manproject.computerhelper.FunctionRepository;
-import mirea.manproject.computerhelper.MainActivity;
+import mirea.manproject.computerhelper.repository.FunctionRepository;
 import mirea.manproject.computerhelper.models.Function;
 
 public class MenuViewModel extends ViewModel {
@@ -18,7 +17,7 @@ public class MenuViewModel extends ViewModel {
     private MutableLiveData<List<Function>> functionsMutableLiveData;
 
     public MenuViewModel(){
-        functionRepository = ServiceLocator.getInstance().functionRepository;
+        functionRepository = ServiceLocator.getInstance().getFunctionRepository();
         functionsMutableLiveData = functionRepository.getFunctions();
     }
 

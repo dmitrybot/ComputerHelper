@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Asus/.gradle/caches/transforms-3/58ee3aacc9c2ea7e0f6a0746e693f66b/transformed/jetified-searchablespinnerlibrary-1.3.1/res/layout/searchable_list_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Asus/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/Desktop/mirea/4_sem/MDEV/github/computer_helper/app/src/main/res/drawable/button_change.xml" value="0.1" />
         <entry key="..\:/Users/Asus/Desktop/mirea/4_sem/MDEV/github/computer_helper/app/src/main/res/drawable/button_imagination.xml" value="0.1" />
@@ -21,7 +22,8 @@
         <entry key="..\:/Users/Asus/Desktop/mirea/4_sem/MDEV/github/computer_helper/app/src/main/res/layout/fragment_result.xml" value="0.23846153846153847" />
         <entry key="..\:/Users/Asus/Desktop/mirea/4_sem/MDEV/github/computer_helper/app/src/main/res/layout/function_card.xml" value="0.11354166666666667" />
         <entry key="..\:/Users/Asus/Desktop/mirea/4_sem/MDEV/github/computer_helper/app/src/main/res/layout/layout_fragment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Asus/Desktop/mirea/4_sem/MDEV/github/computer_helper/app/src/main/res/layout/result_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Asus/Desktop/mirea/4_sem/MDEV/github/computer_helper/app/src/main/res/layout/list_item_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Asus/Desktop/mirea/4_sem/MDEV/github/computer_helper/app/src/main/res/layout/result_item.xml" value="0.24817518248175183" />
         <entry key="..\:/Users/Asus/Desktop/mirea/4_sem/MDEV/github/computer_helper/app/src/main/res/layout/result_parameter_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/Desktop/mirea/4_sem/MDEV/github/computer_helper/app/src/main/res/layout/spinner_dropdown.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Asus/Desktop/mirea/4_sem/MDEV/github/computer_helper/app/src/main/res/layout/spinner_item_selection.xml" value="0.25416666666666665" />

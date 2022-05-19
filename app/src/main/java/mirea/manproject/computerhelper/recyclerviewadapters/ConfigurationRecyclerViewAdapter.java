@@ -10,13 +10,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import mirea.manproject.computerhelper.R;
-import mirea.manproject.computerhelper.components.ComponentParameter;
+import mirea.manproject.computerhelper.models.Component;
+import mirea.manproject.computerhelper.models.ComponentParameter;
 
 public class ConfigurationRecyclerViewAdapter extends RecyclerView.Adapter<ConfigurationViewHolder>{
 
-    private List<ComponentParameter> configurationParameters;
+    private List<Component> configurationParameters;
 
-    public ConfigurationRecyclerViewAdapter(List<ComponentParameter> configurationParameters) {
+    public ConfigurationRecyclerViewAdapter(List<Component> configurationParameters) {
         this.configurationParameters = configurationParameters;
     }
 
@@ -30,9 +31,9 @@ public class ConfigurationRecyclerViewAdapter extends RecyclerView.Adapter<Confi
     @Override
     public void onBindViewHolder(@NonNull ConfigurationViewHolder holder, int position) {
         if (configurationParameters != null && position < configurationParameters.size()) {
-            ComponentParameter configurationParameter = configurationParameters.get(position);
+            Component configurationParameter = configurationParameters.get(position);
             holder.propertyName.setText(configurationParameter.getName());
-            holder.propertyValue.setText(configurationParameter.getValue());
+            holder.propertyValue.setText(configurationParameter.getPickedVariant());
         }
     }
 

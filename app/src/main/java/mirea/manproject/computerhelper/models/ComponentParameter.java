@@ -1,26 +1,22 @@
-package mirea.manproject.computerhelper.components;
+package mirea.manproject.computerhelper.models;
 
-public abstract class ComponentParameter {
+public class ComponentParameter {
 
-    int name;
+    String name;
     String value;
 
     public ComponentParameter(){}
 
-    public ComponentParameter(int name) {
-        this.name = name;
-    }
-
-    public ComponentParameter(int name, String value) {
+    public ComponentParameter(String name, String value) {
         this.name = name;
         this.value = value;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
 

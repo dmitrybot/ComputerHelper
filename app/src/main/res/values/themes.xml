@@ -24,4 +24,14 @@
     <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textSize">24dp</item>
     </style>
+
+    <style name="YDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="colorAccent">@android:color/holo_orange_dark</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AppTheme.Button</item>
+    </style>
+
+
+
 </resources>

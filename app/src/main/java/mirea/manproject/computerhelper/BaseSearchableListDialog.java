@@ -97,12 +97,6 @@ public class BaseSearchableListDialog extends DialogFragment implements
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
         alertDialog.setView(rootView);
 
-        String strPositiveButton = _strPositiveButtonText == null ? "CLOSE" : _strPositiveButtonText;
-        alertDialog.setPositiveButton(strPositiveButton, _onClickListener);
-
-        String strTitle = _strTitle == null ? "Select Item" : _strTitle;
-        alertDialog.setTitle(strTitle);
-
         final AlertDialog dialog = alertDialog.create();
         dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams
                 .SOFT_INPUT_STATE_HIDDEN);
@@ -161,7 +155,7 @@ public class BaseSearchableListDialog extends DialogFragment implements
         _listViewItems = (ListView) rootView.findViewById(R.id.listItems);
 
         //create the adapter by passing your ArrayList data
-        listAdapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1,
+        listAdapter = new ArrayAdapter(getActivity(), R.layout.list_item_dialog,
                 items);
         //attach the adapter to the list
         _listViewItems.setAdapter(listAdapter);

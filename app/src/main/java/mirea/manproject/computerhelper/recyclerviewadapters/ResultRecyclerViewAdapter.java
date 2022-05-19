@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import mirea.manproject.computerhelper.R;
-import mirea.manproject.computerhelper.components.Component;
+import mirea.manproject.computerhelper.models.Component;
 
 public class ResultRecyclerViewAdapter extends RecyclerView.Adapter<ResultViewHolder>{
 
@@ -36,7 +36,7 @@ public class ResultRecyclerViewAdapter extends RecyclerView.Adapter<ResultViewHo
                 holder.recomendation.setVisibility(View.VISIBLE);
             }
             holder.title.setText(component.getName());
-            ResultParameterRecyclerViewAdapter adapter = new ResultParameterRecyclerViewAdapter(component.getComponentPatameters());
+            ResultParameterRecyclerViewAdapter adapter = new ResultParameterRecyclerViewAdapter(component.getComponentParameters());
 
             holder.recyclerView.setAdapter(adapter);
         }

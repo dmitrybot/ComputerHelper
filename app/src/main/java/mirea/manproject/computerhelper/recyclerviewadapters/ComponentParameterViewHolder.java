@@ -26,8 +26,5 @@ public class ComponentParameterViewHolder extends RecyclerView.ViewHolder{
                 itemView.getContext(), R.layout.spinner_item_selection, R.id.spinner_item, arr);
         adapter.setDropDownViewResource(R.layout.spinner_dropdown);
         spinner.setAdapter(adapter);
-        spinner.setAdapter(adapter);
-        spinner.setTitle("Э");
-        spinner.setPositiveButton("OK");
     }
 }
